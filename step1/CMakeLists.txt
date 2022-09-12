@@ -11,4 +11,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # add the executable
 # https://cmake.org/cmake/help/latest/command/add_executable.html
 # https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_SOURCE_DIR.html
-add_executable(tutorial1_main ${CMAKE_CURRENT_SOURCE_DIR}/src/tutorial1.cpp)
+# https://cmake.org/cmake/help/latest/variable/PROJECT_NAME.html
+add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/src/tutorial1.cpp)
