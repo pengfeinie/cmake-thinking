@@ -36,7 +36,13 @@ endif()
 # https://cmake.org/cmake/help/latest/command/add_executable.html
 # https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_SOURCE_DIR.html
 # https://cmake.org/cmake/help/latest/variable/PROJECT_NAME.html
-add_executable(${PROJECT_NAME}  ${CMAKE_CURRENT_SOURCE_DIR}/src/tutorial6.cpp)
+# https://cmake.org/cmake/help/latest/command/aux_source_directory.html
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src/ SRC_FILES)
+add_executable(${PROJECT_NAME}  ${SRC_FILES})
+
+#add_executable(${PROJECT_NAME}  ${CMAKE_CURRENT_SOURCE_DIR}/src/tutorial6.cpp)
+
+
 
 
 # add the binary tree to the search path for include files
