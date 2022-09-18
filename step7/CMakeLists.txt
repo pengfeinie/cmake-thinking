@@ -32,6 +32,9 @@ if(USE_MYMATH)
     list(APPEND EXTRA_MY_MATH_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/my_math/include)
 endif()
 
+add_subdirectory(thirdparty/glfw)
+
+
 # add the executable
 # https://cmake.org/cmake/help/latest/command/add_executable.html
 # https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_SOURCE_DIR.html
