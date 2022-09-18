@@ -1,0 +1,6 @@
+[submodule "step7/thirdparty/glfw"]
+	path = step7/thirdparty/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "step7/thirdparty/kalmanfilter"]
+	path = step7/thirdparty/kalmanfilter
+	url = https://github.com/TKJElectronics/KalmanFilter.git
