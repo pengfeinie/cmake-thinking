@@ -33,6 +33,7 @@ if(USE_MYMATH)
 endif()
 
 add_subdirectory(thirdparty/glfw)
+list(APPEND THIRDPARTY_GLFW_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/glfw/include)
 
 
 # add the executable
@@ -56,6 +57,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
                            ${PROJECT_BINARY_DIR}
                            ${EXTRA_MY_HELLO_INCLUDES}
                            ${EXTRA_MY_MATH_INCLUDES}
+                           ${THIRDPARTY_GLFW_INCLUDES}
                            )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC 

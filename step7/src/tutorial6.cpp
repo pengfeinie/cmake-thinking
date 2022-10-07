@@ -4,6 +4,7 @@
 #include <string>
 #include "TutorialConfig.h"
 #include "basic_hello/basic_hello_function.h"
+#include <GLFW/glfw3.h>
 #ifdef USE_MYMATH
   #include "basic_math/basic_math_function.h"
   #include "complex_math/complex_math_function.h"
