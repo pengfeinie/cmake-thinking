@@ -22,26 +22,3 @@ void global_2_RelativePosition(LLA& refPos, double& refPosHeadingValue, LLA& tar
     targetRelativePos.x = rotated_x;
     targetRelativePos.y = rotated_y;
 }
-
-void global_2_RelativePosition_iso(LLA& refPos, double& refPosHeadingValue, LLA& targetPos, RelativePosition& targetRelativePos)
-{
-    global_2_RelativePosition(refPos, refPosHeadingValue, targetPos,targetRelativePos);
-}
-
-void global_2_RelativePosition_sae(LLA& refPos, double& refPosHeadingValue, LLA& targetPos, RelativePosition& targetRelativePos)
-{
-    global_2_RelativePosition(refPos, refPosHeadingValue, targetPos,targetRelativePos);
-    double x = targetRelativePos.x;
-    double y = targetRelativePos.y;
-    targetRelativePos.x = x;
-    targetRelativePos.y = -y;
-}
-
-void global_2_RelativePosition_imu(LLA& refPos, double& refPosHeadingValue, LLA& targetPos, RelativePosition& targetRelativePos)
-{
-    global_2_RelativePosition(refPos, refPosHeadingValue, targetPos,targetRelativePos);
-    double x = targetRelativePos.x;
-    double y = targetRelativePos.y;
-    targetRelativePos.x = -y;
-    targetRelativePos.y = x;
-}
